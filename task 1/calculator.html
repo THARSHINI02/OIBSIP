@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script src="calculator.js"></script>
+    </head>
+    <body>
+        <form name="f">
+        <table>
+            <tr><td colspan="5"><input type="text" name="display" class="display"></td></tr>
+            <tr><td><input type="button" class="btn" value="clear" onclick="clearAll()"></td>
+                <td><input type="button" class="btn" value="Del" onclick="del()"></td>
+                <td><input type="button" class="btn" onclick="toggle()" value="+/-"></td>
+                <td><input type="button" class="btn" value="²" onclick="calsqt()"></td>
+                <td><input type="button" class="btn" value="v2" onclick="calroot()"></td></tr>
+            <tr><td><input type="button" class="btn" value="7" onclick="appendToAnswer('7')"></td>
+                <td><input type="button" class="btn" value="8" onclick="appendToAnswer('8')"></td>
+                <td><input type="button" class="btn" value="9" onclick="appendToAnswer('9')"></td>
+                <td><input type="button" class="btn" value="/" onclick="appendToAnswer('/')"></td>
+                <td><input type="button" class="btn" value="**" onclick="appendToAnswer('**')"></td></tr>
+            <tr><td><input type="button" class="btn" value="4" onclick="appendToAnswer('4')"></td>
+                <td><input type="button" class="btn" value="5" onclick="appendToAnswer('5')"></td>
+                <td><input type="button" class="btn" value="6" onclick="appendToAnswer('6')"></td>
+                <td><input type="button" class="btn" value="*" onclick="appendToAnswer('*')"></td>
+                <td rowspan="2"><input type="button" class="btnadd" value="+" onclick="appendToAnswer('+')"></td></tr>
+            <tr><td><input type="button" class="btn" value="1" onclick="appendToAnswer('1')"></td>
+                <td><input type="button" class="btn" value="2" onclick="appendToAnswer('2')" ></td>
+                <td><input type="button" class="btn" value="3" onclick="appendToAnswer('3')"></td>
+                <td><input type="button" class="btn" value="-" onclick="appendToAnswer('-')"></td></tr>
+            <tr><td><input type="button" class="btn" value="%" onclick="appendToAnswer('%')"></td>
+                <td><input type="button" class="btn" value="0" onclick="appendToAnswer('0')"></td>
+                <td><input type="button" class="btn" value="." onclick="appendToAnswer('.')"></td>
+                <td colspan="2"><input type="button" class="btneql" onclick="calculateResult()"></td></tr>
+        </table></form>
+    </body>
+</html>
